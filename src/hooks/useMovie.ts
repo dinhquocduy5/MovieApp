@@ -89,6 +89,10 @@ const useMovie = () => {
   };
 
   const handleSearchMovie = async (value: string) => {
+    setCurrentPage(1)
+    history.push({
+      pathname: '/movies'
+    });
     try {
       setIsError(false);
       setIsFetching(true);
