@@ -4,12 +4,12 @@ import { RouteComponentProps, useHistory } from 'react-router-dom';
 import SearchInput from '../../components/InputSearch';
 import Skeleton from '../../components/Skeleton';
 import Tabs from '../../components/Tabs';
+import useMovie from '../../hooks/useMovie';
 import { Movie } from '../../interfaces/movie';
 import MoviePoster from './components/MoviePoster';
-import useMovie from '../../hooks/useMovie';
+import Pagination from '../../components/Pagination';
 
 import './styles.scss';
-import Pagination from '../../components/Pagination';
 
 const Movies = (props: RouteComponentProps<{}>) => {
   const { location } = props;
