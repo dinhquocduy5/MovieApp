@@ -21,7 +21,7 @@ const DetailMovie = (
 
   return (
     <div className="movie-detail-page">
-      <button className='back-button' onClick={() => history.push('/movies')}>Back</button>
+      <button className='back-button' onClick={() => history.goBack()}>Back</button>
       {!_.isEmpty(detailMovie) && !isFetching ? (
         <div className="movie">
           <img
